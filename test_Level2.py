@@ -13,6 +13,10 @@ def test_rightclick(page: Page):
     expect(page.locator("#rightClickMessage")) \
         .to_have_text("You have done a right click")
 
+def test_singleclick(page: Page):
+    page.goto("https://demoqa.com/buttons")
+    page.get_by_role("button",name="Click Me",exact=True)
+
 def test_click(page: Page):
     page.goto("https://demoqa.com/buttons")
     box = page.get_by_role("button", name="Click Me").nth(0).bounding_box()
