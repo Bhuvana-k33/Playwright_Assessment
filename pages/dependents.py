@@ -12,7 +12,7 @@ class Dependents(BasePage):
         self.add = page.get_by_role("button", name="Add").nth(0)
         self.name= page.get_by_role("textbox").nth(1)
         self.relationshipdropdown=page.locator(".oxd-select-text-input")
-        self.date=page.get_by_placeholder("dd-mm-yyyy")
+        self.date=page.get_by_placeholder("yyyy-dd-mm")
         self.savebtn= page.get_by_role("button", name="Save")
         self.addbtn = page.get_by_role("button", name="Add").nth(1)
         self.addattachment = page.get_by_role("button", name="Add").nth(1)
