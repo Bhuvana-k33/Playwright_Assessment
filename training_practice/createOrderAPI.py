@@ -8,7 +8,7 @@ from pathlib import Path
 from utils.getToken import ApiUtils
 
 BASE_DIR = Path(__file__).resolve().parent.parent   # adjust if needed
-file_path = BASE_DIR /"PythonProject" / "data" / "creds.json"
+file_path = BASE_DIR /"PythonProject" / "test_data" / "creds.json"
 
 with open(file_path) as f:
     data = json.load(f)

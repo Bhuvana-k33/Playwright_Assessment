@@ -7,7 +7,7 @@ def test_fileupload(page: Page):
 
     page.goto("https://the-internet.herokuapp.com/upload")
     page.get_by_role("heading", name="File Uploader").click()
-    page.set_input_files("input[type='file']",r"C:\Users\Daffolap-1080\PycharmProjects\PythonProject\File_upload.txt")
+    page.set_input_files("input[type='file']", r"/File_upload.txt")
     page.click("#file-submit")
 
     file_name=page.locator("#uploaded-files").text_content()
@@ -16,6 +16,6 @@ def test_fileupload(page: Page):
     time.sleep(5)
 
 def test_filedownload(page: Page):
-    file_name="File_upload.txt"
+    file_name= "../File_upload.txt"
     page.goto("https://the-internet.herokuapp.com/download")
     page.click(f"text={file_name}")

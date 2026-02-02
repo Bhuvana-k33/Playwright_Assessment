@@ -1,0 +1,37 @@
+{
+  "emergency_contacts": [
+    {
+      "name": "Ravi Kumar",
+      "relationship": "Brother",
+      "home_phone": "9876543210"
+    },
+    {
+      "name": "Anita Sharma",
+      "relationship": "Sister",
+      "home_phone": "9988776655"
+
+    }
+  ],
+
+  "dependents": [
+    {
+      "name": "Mattew",
+      "relationship": "Child",
+      "date_of_birth": "2015-10-12"
+    },
+    {
+      "name": "Colin",
+      "relationship": "child",
+      "date_of_birth": "1990-06-25"
+    }
+  ],
+
+  "immigration": [
+    {
+      "passportnumber": "45",
+      "issued_date": "1990-06-25",
+      "expiry_date": "2035-06-25",
+      "issued_by" : "Bhutan"
+    }
+  ]
+}
